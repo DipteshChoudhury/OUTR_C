@@ -21,11 +21,11 @@ int main()
     {
         if (a[i] < 30 && a[i] > 0)
         {
-            pass++;
+            fail++;
         }
         else if (a[i] >= 30 && a[i] < 101)
         {
-            fail++;
+            pass++;
         }
     }
 
