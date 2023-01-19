@@ -16,6 +16,6 @@ int main()
     a = a - b - c;
 
     printf("After Swapping a=%d\tb=%d\tc=%d\n", a, b, c);
-    scanf("%d%d%d", &a, &b, &c);
+
     return 0;
 }

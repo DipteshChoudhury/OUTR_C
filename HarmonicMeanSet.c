@@ -4,7 +4,7 @@
 int main()
 {
     int n;
-    printf("Enter the total number of values:");
+    printf("Enter number of values:");
     scanf("%d", &n);
 
     float count = 0.0, value;

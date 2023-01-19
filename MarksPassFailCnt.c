@@ -6,29 +6,23 @@ number of fail marks, percentage of pass and fail.
 
 int main()
 {
-    int n;
+    int n, mark;
     float pass, fail;
-    printf("Enter no. of marks you want to enter? ");
+    printf("Enter no. of marks? ");
     scanf("%d", &n);
-    int a[n];
-    printf("Enter %d no. of marks(from 100):-", n);
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d", &a[i]);
-    }
 
+    printf("Enter %d no. of marks(from 100):-\n", n);
     for (int i = 0; i < n; i++)
     {
-        if (a[i] < 30 && a[i] > 0)
+        printf("Enter mark :-");
+        scanf("%d", &mark);
+        if (mark < 30 && mark > 0)
         {
             fail++;
         }
-        else if (a[i] >= 30 && a[i] < 101)
-        {
-            pass++;
-        }
     }
-
+    pass = n - fail;
+    printf("No. of pass :-%.0f\nNo. of fail:-%.0f\n", pass, fail);
     printf("Pass %% is %.2f & Fail %% is %.2f", (pass * 100) / n, (fail * 100) / n);
 
     return 0;
